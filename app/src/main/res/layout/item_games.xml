@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivGames"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        tools:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvjuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Super Mario Bros."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivGames"/>
+
+    <TextView
+        android:id="@+id/tvdistribuidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nintendo"
+        app:layout_constraintTop_toBottomOf="@+id/tvjuego"
+        app:layout_constraintStart_toEndOf="@+id/ivGames"/>
+
+    <TextView
+        android:id="@+id/tvprecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="60$"
+        app:layout_constraintTop_toBottomOf="@+id/tvdistribuidor"
+        app:layout_constraintStart_toEndOf="@+id/ivGames"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
